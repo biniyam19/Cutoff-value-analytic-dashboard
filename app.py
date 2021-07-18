@@ -14,7 +14,7 @@ from sklearn import preprocessing
 from sklearn.metrics import confusion_matrix
 
 
-df = pd.read_csv("DataScientist_test_data.csv")
+df = pd.read_csv("bc_diagnoiss.csv")
 diagnosis_numeric = df['diagnosis'].apply(lambda x:1 if x=="M" else 0)
 
 app = dash.Dash(__name__, external_stylesheets=[dbc.themes.MATERIA])
